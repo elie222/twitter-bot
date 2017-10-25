@@ -1,0 +1,23 @@
+{
+  "name": "draft-twitter-bot",
+  "private": true,
+  "scripts": {
+    "start": "meteor run"
+  },
+  "dependencies": {
+    "babel-runtime": "6.18.0",
+    "lodash": "^4.17.4",
+    "meteor-node-stubs": "~0.2.0",
+    "twit": "^2.2.5"
+  },
+  "devDependencies": {
+    "babel-eslint": "^6.1.2",
+    "eslint": "^3.15.0",
+    "eslint-config-airbnb": "^13.0.0",
+    "eslint-import-resolver-meteor": "^0.3.4",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^2.2.3",
+    "eslint-plugin-meteor": "^4.0.1",
+    "eslint-plugin-react": "^6.8.0"
+  }
+}

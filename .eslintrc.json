@@ -1,0 +1,41 @@
+{
+  "plugins": [
+    "meteor",
+    "import"
+  ],
+  "extends": [
+    "airbnb",
+    "eslint-config-airbnb",
+    "eslint:recommended",
+    "plugin:meteor/recommended"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "allowImportExportEverywhere": true
+  },
+  "env": {
+    "es6": true,
+    "browser": true,
+    "node": true,
+    "meteor": true
+  },
+  "rules": {
+    "meteor/no-session": "off",
+    "no-console": "off",
+    "meteor/eventmap-params": [2, {"eventParamName": "e", "templateInstanceParamName": "t"}],
+    "comma-dangle": ["error", "always-multiline"],
+    "object-curly-spacing": ["error", "always"],
+    "array-bracket-spacing": ["error", "never"],
+    "semi": ["error", "always"],
+    "curly": ["error", "multi-or-nest", "consistent"],
+    "no-var": "error",
+    "prefer-const": "error",
+    "no-trailing-spaces": "error",
+    "no-multiple-empty-lines": ["error", { "max": 1 }]
+  },
+  "parser": "babel-eslint",
+  "settings": {
+    "import/resolver": "meteor"
+  }
+}

@@ -1,0 +1,8 @@
+node_modules/
+*.log
+out/
+typings
+.idea
+
+settings.private.json
+server/twitter.js
