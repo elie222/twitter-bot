@@ -10,32 +10,12 @@ import {
 Meteor.startup(() => {
   // code to run on server at startup
   if (!Meteor.settings.twitter) {
-    console.error('Please run the app with a settings.json file. Run meteor --settings settings.local.json with the twitter key set.');
+    console.error('Please run the app with a settings.json file. Run meteor --settings settings.private.json with the twitter keys set.');
 
     return;
   }
 
   const T = new Twit(Meteor.settings.twitter);
-
-  // T.get('search/tweets', { q: '#fpl since:2011-07-16', count: 500 }, (err, data, response) => {
-  //   if (err) {
-  //     console.log('Error searching for tweets.');
-  //     console.log(err);
-  //   }
-  //
-  //   // console.log(data);
-  //
-  //   const { statuses } = data;
-  //
-  //   statuses.forEach(tweet => {
-  //     // console.log(tweet.text);
-  //     // console.log(tweet.id_str);
-  //     // // console.log(tweet.user);
-  //     // console.log(tweet.user.id_str);
-  //
-  //     likeTweet(tweet.id_str);
-  //   });
-  // });
 
   const stream = T.stream('statuses/filter',  { track: statuses });
 
@@ -80,3 +60,23 @@ Meteor.startup(() => {
     });
   };
 });
+
+// T.get('search/tweets', { q: '#fpl since:2011-07-16', count: 500 }, (err, data, response) => {
+//   if (err) {
+//     console.log('Error searching for tweets.');
+//     console.log(err);
+//   }
+//
+//   // console.log(data);
+//
+//   const { statuses } = data;
+//
+//   statuses.forEach(tweet => {
+//     // console.log(tweet.text);
+//     // console.log(tweet.id_str);
+//     // // console.log(tweet.user);
+//     // console.log(tweet.user.id_str);
+//
+//     likeTweet(tweet.id_str);
+//   });
+// });
