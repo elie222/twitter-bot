@@ -3,7 +3,6 @@ import Twit from 'twit';
 import _ from 'lodash';
 import {
   statuses,
-  alwaysRespond,
   respondList,
   responseMessages,
 } from './twitter';
@@ -47,7 +46,7 @@ Meteor.startup(() => {
 
     likeTweet(tweet.id_str);
 
-    if (alwaysRespond || _.includes(respondList, tweet.user.screen_name))
+    if (_.includes(respondList, tweet.user.screen_name))
       respondToTweet(tweet.id_str, tweet.user.screen_name);
   });
 

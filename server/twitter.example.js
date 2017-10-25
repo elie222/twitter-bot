@@ -13,9 +13,6 @@ export const respondList = [
   'ethereumproject', // @ethereumproject
 ];
 
-// if this is set to true we ignore the respondList and always respond
-export const alwaysRespond = false;
-
 // we randomly choose a response message from this array when responding
 export const responseMessages = [
   'Check out our amazing dapp at amazingdapp.com!',

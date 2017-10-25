@@ -12,3 +12,6 @@ The bot will now start running and auto liking and responding to relevant users.
 We use this with a secondary Twitter account so we don't get blocked. If Twitter does ever lock your account, it's not difficult to unlock it.
 
 Server side only app. View the console to see what's happening.
+
+## Notes
+Responding too aggressively to users can get your bot blocked. Because of this we removed the feature to respond to all tweets in the stream.
