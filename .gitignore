@@ -5,4 +5,4 @@ typings
 .idea
 
 settings.private.json
-server/twitter.js
+imports/api/twitter/server/constants.js

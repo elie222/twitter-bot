@@ -2,7 +2,7 @@
   "name": "draft-twitter-bot",
   "private": true,
   "scripts": {
-    "start": "meteor run"
+    "start": "meteor --settings settings.private.json --port 7000"
   },
   "dependencies": {
     "babel-runtime": "6.18.0",
@@ -14,7 +14,7 @@
     "babel-eslint": "^6.1.2",
     "eslint": "^3.15.0",
     "eslint-config-airbnb": "^13.0.0",
-    "eslint-import-resolver-meteor": "^0.3.4",
+    "eslint-import-resolver-meteor": "^0.4.0",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^2.2.3",
     "eslint-plugin-meteor": "^4.0.1",

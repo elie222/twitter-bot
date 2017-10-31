@@ -4,8 +4,8 @@
 * Install Meteor.
 * `npm install`
 * Copy `settings.example.json` to `settings.private.json` and enter your twitter API details. `settings.private.json` is in the `.gitignore` list.
-* Copy `server/twitter.example.js` to `server/twitter.js` and fill it in with the statuses you wish to like and respond to.
-* Run `meteor --settings settings.private.json`.
+* Copy `imports/api/twitter/server/constants.example.js` to `imports/api/twitter/server/constants.js` and fill it in with the statuses you wish to like and respond to.
+* Run `meteor --settings settings.private.json` or `npm start` for short.
 
 The bot will now start running and auto liking and responding to relevant users.
 
